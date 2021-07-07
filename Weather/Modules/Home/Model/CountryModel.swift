@@ -49,9 +49,11 @@ struct WeatherTime: Codable {
     let humidity: Int
     let visibility: Double
     let predictability: Int
+    let weatherStateName: String
     
     
     enum CodingKeys: String, CodingKey {
+        case weatherStateName = "weather_state_name"
         case weatherTime = "weather_state_abbr"
         case applicableDate = "applicable_date"
         case minTemp = "min_temp"

@@ -57,6 +57,10 @@
 		EE935F27269422800047A902 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE935F26269422800047A902 /* UIView.swift */; };
 		EE935F2A269425470047A902 /* HeaderWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE935F29269425470047A902 /* HeaderWeather.swift */; };
 		EE935F2C269425520047A902 /* HeaderWeather.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE935F2B269425520047A902 /* HeaderWeather.xib */; };
+		EE935F5A269584950047A902 /* WeekTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE935F58269584950047A902 /* WeekTimeTableViewCell.swift */; };
+		EE935F5B269584950047A902 /* WeekTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE935F59269584950047A902 /* WeekTimeTableViewCell.xib */; };
+		EE935F5F269587240047A902 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE935F5D269587240047A902 /* TimeCollectionViewCell.swift */; };
+		EE935F60269587240047A902 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE935F5E269587240047A902 /* TimeCollectionViewCell.xib */; };
 		F639A6843602B06FA18FFA21 /* Pods_Weather_WeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782E4F1D674884FCE8F668E0 /* Pods_Weather_WeatherUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +145,10 @@
 		EE935F26269422800047A902 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		EE935F29269425470047A902 /* HeaderWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeather.swift; sourceTree = "<group>"; };
 		EE935F2B269425520047A902 /* HeaderWeather.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderWeather.xib; sourceTree = "<group>"; };
+		EE935F58269584950047A902 /* WeekTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTimeTableViewCell.swift; sourceTree = "<group>"; };
+		EE935F59269584950047A902 /* WeekTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekTimeTableViewCell.xib; sourceTree = "<group>"; };
+		EE935F5D269587240047A902 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE935F5E269587240047A902 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +478,7 @@
 		EE935F1526940E7E0047A902 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE935F562695843E0047A902 /* Cell */,
 				EE935F282694244A0047A902 /* Header */,
 				EE935F1626940E7E0047A902 /* CountryDetailView.swift */,
 				EE935F1726940E7E0047A902 /* CountryDetailView.xib */,
@@ -502,6 +511,33 @@
 				EE935F2B269425520047A902 /* HeaderWeather.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		EE935F562695843E0047A902 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE935F57269584750047A902 /* WeekTime */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE935F57269584750047A902 /* WeekTime */ = {
+			isa = PBXGroup;
+			children = (
+				EE935F5C2695870C0047A902 /* Cell */,
+				EE935F58269584950047A902 /* WeekTimeTableViewCell.swift */,
+				EE935F59269584950047A902 /* WeekTimeTableViewCell.xib */,
+			);
+			path = WeekTime;
+			sourceTree = "<group>";
+		};
+		EE935F5C2695870C0047A902 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE935F5D269587240047A902 /* TimeCollectionViewCell.swift */,
+				EE935F5E269587240047A902 /* TimeCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,7 +659,9 @@
 				EE935F1E26940E7E0047A902 /* CountryDetailView.xib in Resources */,
 				EE03E16626912B3500E9DF0E /* HomeView.xib in Resources */,
 				EE03E1242691207300E9DF0E /* Assets.xcassets in Resources */,
+				EE935F5B269584950047A902 /* WeekTimeTableViewCell.xib in Resources */,
 				EE03E1222691206E00E9DF0E /* Main.storyboard in Resources */,
+				EE935F60269587240047A902 /* TimeCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,10 +797,12 @@
 				EE935EDA269357940047A902 /* BaseViewController.swift in Sources */,
 				EE935ED8269350C20047A902 /* WeatherNavigationController.swift in Sources */,
 				EE935F25269422220047A902 /* XibBundle.swift in Sources */,
+				EE935F5A269584950047A902 /* WeekTimeTableViewCell.swift in Sources */,
 				EE935F24269422220047A902 /* XibView.swift in Sources */,
 				EE935EFE26938C950047A902 /* HomeRepository.swift in Sources */,
 				EE03E11B2691206E00E9DF0E /* AppDelegate.swift in Sources */,
 				EE935F2A269425470047A902 /* HeaderWeather.swift in Sources */,
+				EE935F5F269587240047A902 /* TimeCollectionViewCell.swift in Sources */,
 				EE935EFB269385420047A902 /* BaseRouter.swift in Sources */,
 				EE935EF026937FC30047A902 /* CountryModel.swift in Sources */,
 				EE935F27269422800047A902 /* UIView.swift in Sources */,

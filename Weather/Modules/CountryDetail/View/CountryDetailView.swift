@@ -4,6 +4,8 @@ class CountryDetailView: BaseViewController, CountryDetailViewProtocol {
 
     @IBOutlet weak var tableView: UITableView!
     
+    typealias cell = WeekTimeTableViewCell
+    
     var presenter: CountryDetailPresenterProtocol?
     
     var headerView: HeaderWeather = {
@@ -22,15 +24,23 @@ extension CountryDetailView {
     func initTableView() {
         headerView.modelView = presenter?.model
         tableView.tableHeaderView = headerView
+        tableView.register(cell.nib, forCellReuseIdentifier: cell.identifier)
+        tableView.tableFooterView = UIView()
     }
 }
 
 extension CountryDetailView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cellView = tableView.dequeueReusableCell(withIdentifier: cell.identifier,
+                                                           for: indexPath) as? cell else {
+            return UITableViewCell()
+        }
+        cellView.data = presenter?.model?.weekTime ?? []
+        cellView.initCollectionView()
+        return cellView
     }
 }
