@@ -11,5 +11,7 @@ struct WeatherCountryView {
     let title: String
     let type: String
     let actuallyTemp: Int
+    let parent: CountryWeather
     let weekTime: [WeatherTime]
+    let locationType: String
 }

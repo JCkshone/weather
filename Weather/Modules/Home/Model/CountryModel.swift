@@ -26,12 +26,14 @@ struct CountryWeatherTimeResponse: Codable {
     let parent: CountryWeather
     let title: String
     let woeid: Int
+    let locationType: String
     
     enum CodingKeys: String, CodingKey {
         case weekTime = "consolidated_weather"
         case parent = "parent"
         case title = "title"
         case woeid = "woeid"
+        case locationType = "location_type"
     }
 }
 
@@ -47,6 +49,7 @@ struct WeatherTime: Codable {
     let humidity: Int
     let visibility: Double
     let predictability: Int
+    
     
     enum CodingKeys: String, CodingKey {
         case weatherTime = "weather_state_abbr"

@@ -29,11 +29,11 @@ class HeaderWeather: XibView {
 
 extension HeaderWeather {
     func setupView(with data: WeatherCountryView) {
-        temperatureLabel.text = "\(data.actuallyTemp)"
-        countryLabel.text = "prueba"
+        temperatureLabel.text = "\(data.actuallyTemp)°"
+        countryLabel.text = data.title
         temperatureImg.image = UIImage(named: data.type)
-        stateLabel.text = "prueba 2"
-        parentCountryLabel.text = "parent label"
-        humidityLabel.text = "12"
+        stateLabel.text = data.locationType
+        parentCountryLabel.text = data.parent.title
+        humidityLabel.text = "\(data.weekTime.first?.humidity ?? 0)%"
     }
 }

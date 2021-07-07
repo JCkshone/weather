@@ -54,7 +54,9 @@ extension HomeInteractor {
         data.append(WeatherCountryView(title: model.title,
                                        type: model.weekTime.first?.weatherTime ?? "",
                                        actuallyTemp: Int(model.weekTime.first?.maxTemp ?? 0),
-                                       weekTime: model.weekTime))
+                                       parent: model.parent,
+                                       weekTime: model.weekTime,
+                                       locationType: model.locationType))
         requestCounter += 1
         
         if countryData.count == self.data.count {
