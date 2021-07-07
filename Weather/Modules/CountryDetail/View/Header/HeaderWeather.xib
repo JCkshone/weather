@@ -62,7 +62,7 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3fd-dF-cte">
-                    <rect key="frame" x="16" y="109" width="341" height="90"/>
+                    <rect key="frame" x="16" y="109" width="341" height="120"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nG5-SN-MEp">
                             <rect key="frame" x="0.0" y="0.0" width="341" height="50"/>
@@ -88,10 +88,10 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v4X-9m-ah5">
-                            <rect key="frame" x="0.0" y="50" width="341" height="40"/>
+                            <rect key="frame" x="0.0" y="50" width="341" height="70"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tyf-4W-TcQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="113.5" height="40"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="113.5" height="70"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v21-wj-zXE">
                                             <rect key="frame" x="0.0" y="0.0" width="113.5" height="26"/>
@@ -103,10 +103,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humedad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lz-zV-x3y">
-                                            <rect key="frame" x="0.0" y="26" width="113.5" height="14"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="14" id="08x-YL-5Ps"/>
-                                            </constraints>
+                                            <rect key="frame" x="0.0" y="26" width="113.5" height="44"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -114,7 +111,7 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O2Y-in-T4d">
-                                    <rect key="frame" x="113.5" y="0.0" width="114" height="40"/>
+                                    <rect key="frame" x="113.5" y="0.0" width="114" height="70"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVe-F2-xhu">
                                             <rect key="frame" x="0.0" y="0.0" width="114" height="26"/>
@@ -126,10 +123,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visibilidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-Qi-XLb">
-                                            <rect key="frame" x="0.0" y="26" width="114" height="14"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="14" id="73M-ik-w4K"/>
-                                            </constraints>
+                                            <rect key="frame" x="0.0" y="26" width="114" height="44"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -137,7 +131,7 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UoB-6Y-crd">
-                                    <rect key="frame" x="227.5" y="0.0" width="113.5" height="40"/>
+                                    <rect key="frame" x="227.5" y="0.0" width="113.5" height="70"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 kmh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-Kn-dWA">
                                             <rect key="frame" x="0.0" y="0.0" width="113.5" height="26"/>
@@ -149,10 +143,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velocidad Nub." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9C-Yv-4s9">
-                                            <rect key="frame" x="0.0" y="26" width="113.5" height="14"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="14" id="RiF-90-LRP"/>
-                                            </constraints>
+                                            <rect key="frame" x="0.0" y="26" width="113.5" height="44"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

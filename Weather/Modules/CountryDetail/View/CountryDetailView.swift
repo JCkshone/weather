@@ -6,11 +6,11 @@ class CountryDetailView: BaseViewController, CountryDetailViewProtocol {
     
     var presenter: CountryDetailPresenterProtocol?
     
-    var headerView: HeaderWeather {
+    var headerView: HeaderWeather = {
         let view = HeaderWeather(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 250))
         view.translatesAutoresizingMaskIntoConstraints = true
         return view
-    }
+    }()
 
 	override func viewDidLoad() {
         super.viewDidLoad()
